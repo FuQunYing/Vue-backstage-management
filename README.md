@@ -1,16 +1,23 @@
 # vue-study
 
-## Project setup
+## 说明
+```
+    此项目基于Vue 和 Ant design of Vue实现的后台管理。
+    主要是为了学习vue，希望最终可以建成界面友好、支持定制的后台管理。
+    不足之处，还请Issues。
+```
+
+## 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 项目启动
 ```
-npm run serve
+npm start
 ```
 
-### Compiles and minifies for production
+### 编译
 ```
 npm run build
 ```
