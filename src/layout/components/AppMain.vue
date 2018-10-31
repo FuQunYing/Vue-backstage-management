@@ -1,5 +1,5 @@
 <template>
-
+<h1>AppMain</h1>
 </template>
 
 <script>

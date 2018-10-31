@@ -24,9 +24,10 @@ import routerConfig from './routerConfig'
 const routerMap = [];
 const recursiveRouterConfig = (config = []) => {
   config.forEach((item) => {
+    console.log(item);
     const route = {
       path: item.path,
-      layout: item.layout,
+      component: item.layout,
       children: [
         {
           path: '',
@@ -38,9 +39,11 @@ const recursiveRouterConfig = (config = []) => {
       recursiveRouterConfig(item.children)//如果children里面又有children数组，则再次调用
     }
     routerMap.push(route);
-  })
+  });
+  return routerMap;
 };
 const routes = recursiveRouterConfig(routerConfig);
+console.log(routes);
 
 Vue.use(Router);
 
