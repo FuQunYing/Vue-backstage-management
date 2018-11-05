@@ -24,7 +24,6 @@ import routerConfig from './routerConfig'
 const routerMap = [];
 const recursiveRouterConfig = (config = []) => {
   config.forEach((item) => {
-    console.log(item);
     const route = {
       path: item.path,
       component: item.layout,
@@ -43,7 +42,6 @@ const recursiveRouterConfig = (config = []) => {
   return routerMap;
 };
 const routes = recursiveRouterConfig(routerConfig);
-console.log(routes);
 
 Vue.use(Router);
 
