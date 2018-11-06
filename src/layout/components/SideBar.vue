@@ -8,8 +8,7 @@
     </a>
   </div>
   <div>
-    <a-menu :openKeys="openKeys" @openChange="onOpenChange"
-            :defaultSelectedKeys="['/analysis']"
+    <a-menu :defaultSelectedKeys="['/analysis']"
             :defaultOpenKey="['/dashboard']"
             mode="inline" theme="light"
             :inlineCollapsed="collapsed">
@@ -57,6 +56,7 @@
       }
     },
     methods: {
+      //TODO：why this
       onOpenChange(openKeys) {
         const lastOpenKey = openKeys.find(key => this.openKeys.indexOf(key) === -1);
         if(this.rootSubmenuKeys.indexOf(lastOpenKey) === -1) {
@@ -69,6 +69,40 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+  .sider{
+    min-height: 100vh;
+    position: relative;
+    z-index: 20;
+    background-color: #fff;
+    flex: 0 0 256px;
+    width: 256px;
+  }
+  .ant-layout-sider-collapsed{
+    flex: 0 0 80px;
+    width: 80px;
+  }
+  .logo{
+    height: 64px;
+    position: relative;
+    line-height: 64px;
+    padding-left: 24px;
+    transition: all .3s;
+    overflow: hidden;
+    h1, img{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img{
+      height: 32px;
+    }
+    h1{
+      color: #002140;
+      font-size: 20px;
+      margin-left: 12px;
+    }
+  }
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+    border-right: none;
+  }
 </style>

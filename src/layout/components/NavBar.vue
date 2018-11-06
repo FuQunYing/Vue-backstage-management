@@ -42,7 +42,7 @@
 
 <style lang="less" scoped>
   .header{
-    padding-right: 12px;
+    padding:0 12px 0 0;
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(0, 21, 41, .1);
     position: relative;

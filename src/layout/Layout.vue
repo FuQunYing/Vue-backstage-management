@@ -1,23 +1,24 @@
 <template>
   <a-layout class="ant-layout-has-sider">
     <side-bar class="ant-layout-sider sider" :trigger="null" collapsible :collapsed="collapsed" :class="{'ant-layout-sider-collapsed':collapsed}"></side-bar>
-    <a-layout></a-layout>
-    <nav-bar :collapsed="collapsed" @toggle="toggleCollapsed"></nav-bar>
-    <app-main></app-main>
-    <a-layout-footer :style="{}">
-      <div class="globalFooter">
-        <div class="links">
-          <a href="" target="_blank">DSP首页</a>
-          <a href="" target="_blank">
-            <i class="anticon anticon-github"></i>
-          </a>
-          <a href="" target="_blank">Dangerous People</a>
+    <a-layout>
+      <nav-bar :collapsed="collapsed" @toggle="toggleCollapsed"></nav-bar>
+      <app-main></app-main>
+      <a-layout-footer :style="{}">
+        <div class="globalFooter">
+          <div class="links">
+            <a href="" target="_blank">DSP首页</a>
+            <a href="" target="_blank">
+              <i class="anticon anticon-github"></i>
+            </a>
+            <a href="" target="_blank">Dangerous People</a>
+          </div>
+          <div class="copyright">
+            Copyright <i class="anticon anticon-copyright"></i>2018 Admin for Dangerous People
+          </div>
         </div>
-        <div class="copyright">
-          Copyright <i class="anticon anticon-copyright"></i>2018 Admin for Dangerous People
-        </div>
-      </div>
-    </a-layout-footer>
+      </a-layout-footer>
+    </a-layout>
   </a-layout>
 </template>
 
@@ -56,7 +57,7 @@
     }
   }
   .ant-layout{
-    min-height: 100%;
+    min-height: 100vh;
     transition: margin-left .28s;
     overflow-x: hidden;
   }
