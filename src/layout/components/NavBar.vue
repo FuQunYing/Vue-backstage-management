@@ -43,5 +43,60 @@
 <style lang="less" scoped>
   .header{
     padding-right: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .1);
+    position: relative;
+    .fold{
+      font-size: 20px;
+      line-height: 64px;
+      cursor: pointer;
+      transition: all .3s, padding 0s;
+      padding: 0 24px;
+      &:hover{
+        background-color: aliceblue;
+      }
+    }
+    .right{
+      float: right;
+      height: 100%;
+      .item{
+        cursor: pointer;
+        padding: 0 12px;
+        display: inline-block;
+        transition: all .3s;
+        height: 100%;
+        & > i{
+          font-size: 16px;
+          vertical-align: middle;
+          color: rgba(0, 0, 0, .65);
+        }
+        .avatar{
+          margin: 20px 8px 20px 0;
+          color: #1890ff;
+          background-color: hsla(0, 0%, 100%, .8);
+          vertical-align: middle;
+        }
+      }
+      .link{
+        &:hover{
+          background-color: #e6f7ff;
+        }
+      }
+      .user-profile-body{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 14px;
+      }
+      .user-avatar{
+        width: 24px;
+        height: 24px;
+        margin: 0 8px 0 12px;
+        border-radius: 4px;
+      }
+    }
   }
 </style>
