@@ -40,7 +40,7 @@
     components:{
       NavBar,
       SideBar,
-      AppMain
+      AppMain,
     }
   }
 </script>

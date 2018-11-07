@@ -1,12 +1,22 @@
 <template>
-  <p>
-    数据可视化
-  </p>
+  <div>
+    数据
+  </div>
 </template>
 
 <script>
+  import {Bar} from "../../components/Charts";
+
   export default {
-    name: "Analysis"
+    name: "Analysis",
+    data() {
+      return {
+
+      }
+    },
+    components: {
+      Bar
+    }
   }
 </script>
 
