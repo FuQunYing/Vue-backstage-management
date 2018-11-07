@@ -1,6 +1,8 @@
 <template>
   <div>
-    数据
+    <p>
+      数据
+    </p>
   </div>
 </template>
 
