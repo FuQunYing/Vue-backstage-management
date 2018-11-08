@@ -9,7 +9,7 @@ const sideMenuConfig = [
     children: [
       {
         path: '/analysis',
-        name: '分析页'
+        name: '数据概览'
       },
       /*{
         path: '/monitor',
