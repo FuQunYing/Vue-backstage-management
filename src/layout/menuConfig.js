@@ -21,6 +21,25 @@ const sideMenuConfig = [
       }*/
     ]
   },
+  {
+    path: '/exception',
+    name: '异常页',
+    icon: 'warning',
+    children: [
+      {
+        path: '/403',
+        name: '403'
+      },
+      {
+        path: '/404',
+        name: '404'
+      },
+      {
+        path: '/500',
+        name: '500'
+      }
+    ]
+  }
 ];
 
 export {headerMenuConfig,sideMenuConfig}

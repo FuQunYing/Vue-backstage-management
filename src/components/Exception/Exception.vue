@@ -16,7 +16,7 @@
 <script>
   export default {
     name: "Exception",
-    props: ['type', 'img', 'title', 'desc'],
+    props: ['type'],
     data() {
       return {
         config: {
