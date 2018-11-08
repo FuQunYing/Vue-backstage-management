@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      数据
+      数据分析页
     </p>
   </div>
 </template>
