@@ -6,9 +6,25 @@
         <div class="metaWrap">
           <div class="meta">
             <span>{{title}}</span>
-            <span class="action"></span>
+            <span class="action">
+              <a-tooltip>
+                <template slot="title">{{tips}}</template>
+                <i class="anticon anticon-info-circle-o"></i>
+              </a-tooltip>
+            </span>
+          </div>
+          <div class="total">
+            <span>{{total}}</span>
           </div>
         </div>
+      </div>
+      <div class="content" style="height: 46px;">
+        <div class="contentFixed">
+          <slot name="content"></slot>
+        </div>
+      </div>
+      <div class="footer">
+        <slot name="footer"></slot>
       </div>
     </div>
   </a-card>
