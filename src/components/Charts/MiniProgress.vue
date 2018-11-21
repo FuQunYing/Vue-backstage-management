@@ -27,19 +27,19 @@
 </script>
 
 <style scoped lang="less">
-  @import "~ant-design-vue/lib/style/themes/default.less";
+  /*@import "~ant-design-vue/lib/style/themes/default.less";*/
   .miniProgress{
     padding: 5px 0;
     position: relative;
     width: 100%;
     .progressWrap {
-      background-color: @background-color-base;
+      background-color: hsv(0, 0, 96%);
       position: relative;
     }
     .progress{
       transition: all .4s cubic-bezier(0.08, 0.82, 0.17,1) 0s;
       border-radius: 1px 0 0 1px;
-      background-color: @processing-color;
+      background-color: #1890ff;
       width: 0;
       height: 100%;
     }

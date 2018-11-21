@@ -7,7 +7,14 @@
 </template>
 
 <script>
-  import {Bar} from "../../components/Charts";
+  import {
+    Bar,
+    ChartCard,
+    MiniArea,
+    MiniBar,
+    MiniProgress,
+    Pie
+  } from "../../components/Charts";
 
   export default {
     name: "Analysis",
@@ -17,7 +24,12 @@
       }
     },
     components: {
-      Bar
+      Bar,
+      ChartCard,
+      MiniArea,
+      MiniBar,
+      MiniProgress,
+      Pie
     }
   }
 </script>

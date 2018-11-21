@@ -10,6 +10,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@antv/data-set": "^0.10.1",
     "ant-design-vue": "^1.1.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
