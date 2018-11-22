@@ -15,11 +15,9 @@
 </script>
 
 <style scoped lang="less">
-  /*@import "~ant-design-vue/lib/style/themes/default.less";
-  @import "!~ant-design-vue/lib/style/color/colors.less";*/
-  /*.trendItem{
+  .trendItem{
     display: inline-block;
-    font-size: @font-size-base;
+    font-size: 14px;
     line-height: 22px;
     .up, .down{
       margin-left: 4px;
@@ -31,21 +29,21 @@
       }
     }
     .up{
-      color: @red-6;
+      color: #f5222d;
     }
     .down{
-      color: @green-6;
+      color: #52c41a;
       top: -1px;
     }
     &.trendItemGrey .up,
     &.trendItemGrey .down{
-      color: @text-color;
+      color: fade(#000, 65%);
     }
     &.reverseColor .up {
-      color: @green-6;
+      color: #52c41a;
     }
     &.reverseColor .down {
-      color: @red-6;
+      color: #f5222d;
     }
-  }*/
+  }
 </style>

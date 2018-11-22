@@ -37,24 +37,22 @@
 </script>
 
 <style scoped lang="less">
-  /*@import "~ant-design-vue/lib/style/themes/default.less";
-  @import "!~ant-design-vue/lib/style/color/colors.less";*/
-  /*.numberInfo {
+  .numberInfo {
     .suffix {
-      color: @text-color;
+      color: fade(#000, 65%);
       font-size: 16px;
       font-style: normal;
       margin-left: 4px;
     }
     .numberInfoTitle {
-      color: @text-color;
-      font-size: @font-size-base + 2px;
+      color: fade(#000, 65%);
+      font-size: 16px;
       margin-bottom: 16px;
       transition: all 0.3s;
     }
     .numberInfoSubTitle {
-      color: @text-color-secondary;
-      font-size: @font-size-base;
+      color: fade(#000, 65%)-secondary;
+      font-size: 14px;
       height: 22px;
       line-height: 22px;
       overflow: hidden;
@@ -62,7 +60,7 @@
       word-break: break-all;
       white-space: nowrap;
       & > span {
-        color: @heading-color;
+        color: fade(#000, 65%);
         display: inline-block;
         height: 32px;
         line-height: 32px;
@@ -70,8 +68,8 @@
         margin-right: 32px;
       }
       .subTotal{
-        color: @text-color-secondary;
-        font-size: @font-size-base + 2px;
+        color: fade(#000, 65%)-secondary;
+        font-size: 16px;
         vertical-align: top;
         margin-right: 0;
         i {
@@ -81,10 +79,10 @@
         }
         :global{
           .anticon-caret-up {
-            color: @red-6;
+            color: #f5222d;
           }
           .anticon-caret-down{
-            color: @green-6;
+            color: #52c41a;
           }
         }
       }
@@ -93,8 +91,8 @@
   .numberInfolight{
     .numberInfoValue{
       & > span {
-        color: @text-color;
+        color: fade(#000, 65%);
       }
     }
-  }*/
+  }
 </style>
