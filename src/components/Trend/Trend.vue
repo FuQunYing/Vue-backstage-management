@@ -15,8 +15,9 @@
 </script>
 
 <style scoped lang="less">
-  @import "~ant-design-vue/lib/style/themes/default.less";
-  .trendItem{
+  /*@import "~ant-design-vue/lib/style/themes/default.less";
+  @import "!~ant-design-vue/lib/style/color/colors.less";*/
+  /*.trendItem{
     display: inline-block;
     font-size: @font-size-base;
     line-height: 22px;
@@ -46,5 +47,5 @@
     &.reverseColor .down {
       color: @red-6;
     }
-  }
+  }*/
 </style>

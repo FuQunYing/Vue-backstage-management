@@ -37,8 +37,9 @@
 </script>
 
 <style scoped lang="less">
-  @import "~ant-design-vue/lib/style/themes/default.less";
-  .numberInfo {
+  /*@import "~ant-design-vue/lib/style/themes/default.less";
+  @import "!~ant-design-vue/lib/style/color/colors.less";*/
+  /*.numberInfo {
     .suffix {
       color: @text-color;
       font-size: 16px;
@@ -47,7 +48,7 @@
     }
     .numberInfoTitle {
       color: @text-color;
-      font-size: @font-size-lg;
+      font-size: @font-size-base + 2px;
       margin-bottom: 16px;
       transition: all 0.3s;
     }
@@ -70,7 +71,7 @@
       }
       .subTotal{
         color: @text-color-secondary;
-        font-size: @font-size-lg;
+        font-size: @font-size-base + 2px;
         vertical-align: top;
         margin-right: 0;
         i {
@@ -95,5 +96,5 @@
         color: @text-color;
       }
     }
-  }
+  }*/
 </style>
