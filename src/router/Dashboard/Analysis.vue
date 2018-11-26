@@ -189,7 +189,6 @@
 
   export default {
     name: "Analysis",
-    store,
     data() {
       return {
         topColResponsiveProps,

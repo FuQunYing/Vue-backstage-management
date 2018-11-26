@@ -132,7 +132,7 @@ const offlineData = [];
 for (let i = 0; i < 10; i++) {
   offlineData.push({
     name:  `门店${i}`,
-    cvr: Math.cell(Math.random() * 9) / 10
+    cvr: Math.ceil(Math.random() * 9) / 10
   })
 }
 const offlineChartData = [];
