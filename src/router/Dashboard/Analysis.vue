@@ -122,6 +122,61 @@
         </a-tabs>
       </div>
     </a-card>
+    <a-row :gutter="24">
+      <a-col :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
+        <a-card :loading="loading" :bordered="false" title="线上热门搜索" :style="{marginTop: '24px'}">
+          <span class="iconGroup" slot="extra">
+            <a-dropdown>
+              <span class="ant-dropdown-link">
+                <a-icon type="ellipsis"/>
+              </span>
+              <a-menu slot="overlay">
+                <a-menu-item>
+                  <a href="javascript:;">操作一</a>
+                </a-menu-item>
+                <a-menu-item>
+                  <a href="javascript:;">操作二</a>
+                </a-menu-item>
+            </a-menu>
+            </a-dropdown>
+          </span>
+          <a-row :gutter="68">
+            <a-col :sm="12" :xs="24" :style="{marginBottom: '24px'}">
+              <number-info :gap="8" :total="12321 | formatNum" :status="'up'" :subTotal="'18'">
+                <template slot="subTitle">
+                  <span>搜索用户数</span>
+                  <a-tooltip>
+                    <template slot="title">指标文案</template>
+                    <a-icon type="info-circle-o" />
+                  </a-tooltip>
+                </template>
+              </number-info>
+              <mini-area :line="true" :height="45" :data="visitData2"></mini-area>
+            </a-col>
+            <a-col :sm="12" :xs="24" :style="{marginBottom: '24px'}">
+              <number-info :gap="8" :total="2.8" :status="'down'" :subTotal="26">
+                <template slot="subTitle">
+                  <span>人均搜索次数</span>
+                </template>
+              </number-info>
+              <mini-area :line="true" :height="45" :data="visitData2"></mini-area>
+            </a-col>
+          </a-row>
+          <a-table :rowKey="record => record.index" size="small"
+                   :columns="columns" :dataSource="searchData"
+                   :pagination="{style: {marginBottom: '0px'},pageSize: 5}">
+            <a href="/" slot="keyword" slot-scope="text">{{text}}</a>
+            <template slot="range" slot-scope="text,record">
+              <trend :flag="record.status == 1 ? 'down' : 'up'">
+                <span class="trendText" :style="{ marginRight: '4px' }">
+                  {{text}}%
+                </span>
+              </trend>
+            </template>
+          </a-table>
+        </a-card>
+      </a-col>
+    </a-row>
   </div>
 </template>
 
