@@ -51,10 +51,10 @@
       transition: all 0.3s;
     }
     .numberInfoSubTitle {
-      color: fade(#000, 65%)-secondary;
+      color: fade(#000, 65%);
       font-size: 14px;
-      height: 22px;
-      line-height: 22px;
+      height: 32px;
+      line-height: 32px;
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all;

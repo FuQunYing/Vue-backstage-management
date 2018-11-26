@@ -157,6 +157,10 @@
               <number-info :gap="8" :total="2.8" :status="'down'" :subTotal="26">
                 <template slot="subTitle">
                   <span>人均搜索次数</span>
+                  <a-tooltip>
+                    <template slot="title">指标文案</template>
+                    <a-icon type="info-circle-o" />
+                  </a-tooltip>
                 </template>
               </number-info>
               <mini-area :line="true" :height="45" :data="visitData2"></mini-area>
@@ -192,7 +196,7 @@
           </div>
           <h4 :style="{ marginTop: '8px', marginBottom: '32px' }">销售额</h4>
           <!-- TODO: Pie组件还没开始写 -->
-          <!-- <pie :hasLegend="true" :subTitle="销售额" :total="''" :data="salesPieData" :valueFormat="value" :height="248" :lineWidth="4"></pie> -->
+           <!--<pie :hasLegend="true" :subTitle="销售额" :total="''" :data="salesPieData" :valueFormat="value" :height="248" :lineWidth="4"></pie>-->
         </a-card>
       </a-col>
     </a-row>
