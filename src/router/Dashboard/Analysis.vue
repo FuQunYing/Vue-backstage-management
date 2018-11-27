@@ -181,7 +181,7 @@
         </a-card>
       </a-col>
       <a-col :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
-        <a-card :loading="loading" :bordered="false" title="销售额类别占比" class="salesCard" :style="{marginTop: '24px',minHeight: '509px'}">
+        <a-card :loading="loading" :bordered="false" title="销售额类别占比" class="salesCard" :style="{marginTop: '24px'}">
           <div class="salesCardExtra" slot="extra">
             <span class="iconGroup">
               <a-icon type="ellipsis" />
@@ -194,9 +194,15 @@
               </a-radio-group>
             </div>
           </div>
-          <h4 :style="{ marginTop: '8px', marginBottom: '32px' }">销售额</h4>
+          <!--<h4 :style="{ marginTop: '8px', marginBottom: '32px' }">销售额</h4>-->
           <!-- TODO: Pie组件还没开始写 -->
-           <!--<pie :hasLegend="true" :subTitle="销售额" :total="''" :data="salesPieData" :valueFormat="value" :height="248" :lineWidth="4"></pie>-->
+           <pie :hasLegend="true"
+                :subTitle="'销售额'"
+                :total="''"
+                :data="salesPieData"
+                :valueFormat="'RMB'"
+                :height="400"
+                :lineWidth="4"></pie>
         </a-card>
       </a-col>
     </a-row>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pieClassName" :style="style">
+  <div class="pieClassName">
     <v-chart :forceFit="true" :height="height" :data="data" :scale="scale">
       <v-tooltip :showTitle="false"/>
       <v-axis/>
@@ -44,7 +44,7 @@
         default: false
       },
       className: {},
-      style: {},
+      // style: {},
       forceFit: {
         default: true
       },
@@ -59,7 +59,7 @@
       return {
         data,
         scale,
-        height: 100,
+        height: 400,
         pieStyle: {
           stroke: '#fff',
           lineWidth: 1
