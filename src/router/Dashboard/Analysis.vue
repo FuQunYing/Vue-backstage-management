@@ -206,6 +206,18 @@
         </a-card>
       </a-col>
     </a-row>
+    <a-row :gutter="24">
+      <a-col :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
+        <a-card :loading="loading" :bordered="false" title="词云" class="salesCard" :style="{marginTop: '24px'}">
+          <div class="salesCardExtra" slot="extra">
+            <span class="iconGroup">
+              <a-icon type="ellipsis"/>
+            </span>
+          </div>
+          <word-cloud></word-cloud>
+        </a-card>
+      </a-col>
+    </a-row>
   </div>
 </template>
 

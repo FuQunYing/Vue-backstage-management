@@ -39,7 +39,7 @@
 
   export default {
     mounted() {
-      $.getJSON('/assets/data/world-population.json', (data) => {
+      $.getJSON('https://viserjs.github.io/assets/data/world-population.json', (data) => {
         const dv = new DataSet.View().source(data);
         const range = dv.range('value');
         const min = range[0];
