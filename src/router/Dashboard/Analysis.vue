@@ -216,7 +216,8 @@
     MiniArea,
     MiniBar,
     MiniProgress,
-    Pie
+    Pie,
+    WordCloud
   } from "../../components/Charts";
   import {Trend} from "../../components/Trend";
   import {NumberInfo} from "../../components/NumberInfo";
@@ -337,7 +338,8 @@
       MiniProgress,
       Pie,
       Trend,
-      NumberInfo
+      NumberInfo,
+      WordCloud
     }
   }
 </script>
