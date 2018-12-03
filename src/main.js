@@ -11,7 +11,7 @@ import 'ant-design-vue/dist/antd.css'
 Vue.use(Vuex);
 Vue.use(Antd);
 Vue.use(ViserVue);
-
+//Vue.config直接在此使用？
 Vue.config.productionTip = false;
 
 new Vue({

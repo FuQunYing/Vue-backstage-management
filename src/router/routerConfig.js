@@ -1,6 +1,6 @@
 import Layout from '../layout';
 
-import {Analysis} from './Dashboard';
+import {Analysis, Query} from './Dashboard';
 import {Page404, Page403, Page500} from "./Pages";
 
 const routerConfig = [
@@ -13,6 +13,11 @@ const routerConfig = [
         path: '/dashboard/analysis',
         layout: Layout,
         component: Analysis
+      },
+      {
+        path: '/dashboard/query',
+        layout: Layout,
+        component: Query
       },
       {
         path: '/exception/403',

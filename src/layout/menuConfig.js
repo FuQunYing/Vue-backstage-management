@@ -11,6 +11,10 @@ const sideMenuConfig = [
         path: '/analysis',
         name: '数据概览'
       },
+      {
+        path: '/query',
+        name: '数据查询'
+      }
       /*{
         path: '/monitor',
         name: '监控页'
